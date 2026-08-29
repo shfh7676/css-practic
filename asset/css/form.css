@@ -1,0 +1,112 @@
+.container {
+  width: 400px;
+  margin: 0 auto;
+}
+.form {
+  background-color: #ccc;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  margin-top: 2rem;
+}
+
+.form h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form label,
+.form input:not([type="checkbox"]) {
+  display: block;
+  width: 100%;
+}
+
+.form label {
+  font-size: 0.7rem;
+  margin: 0.7rem 0;
+}
+
+.form input.form-control {
+  padding: .3rem;
+  border-radius: .4rem;
+  border: solid 1px rgb(226, 226, 226);
+  font-family: inherit;
+  font-size: .7rem;
+}
+.form input.form-control::placeholder ,
+.form input.form-control::-moz-placeholder,
+.form input.form-control::-webkit-input-placeholder {
+  color: #ccc;
+}
+.form input.form-control:focus{
+  background:#ececec;
+  outline: none;
+}
+
+.form .checkbox input{
+  display: none;
+}
+
+.form .checkbox {
+  margin: 1rem 0;
+   
+}
+.form .checkbox{
+  position: relative;
+  padding-right: 1.3rem;
+  padding-top: .2rem;
+}
+.form .checkbox .checkmark{
+  border-radius: 5px;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.form .checkbox:hover .checkmark {
+  background-color: #e7e7e7;
+}
+.checkbox input:checked ~ .checkmark {
+  background-color: rgb(77, 77, 170);
+}
+.checkmark::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 7px; 
+  border: solid white !important;
+  border-width: 0 2px 2px 0 !important;
+  transform: rotate(45deg) !important;
+   top: 3px;
+   right: 5px;
+   display: none;
+}
+
+.checkbox input:checked ~ .checkmark::after{
+  display: block;
+}
+
+.btn {
+  padding: .3rem .8rem;
+  border-radius: .4rem;
+  border: 0;
+  font-family: inherit;
+  color: white;
+  cursor: pointer;
+
+}
+
+.btn-success{
+  background-color: rgb(12, 83, 12);
+}
+.btn-full {
+  display: block;
+  width: 100%;
+}
+.btn:hover{
+  opacity: .8;
+}
