@@ -1,0 +1,57 @@
+html {
+  font-size: 100%;
+  font-family: "iransans";
+}
+
+.container {
+  width: 400px;
+  margin: 0 auto;
+}
+.form {
+  background-color: #ccc;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  margin-top: 2rem;
+}
+
+.form h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form label,
+.form input:not([type="checkbox"]) {
+  display: block;
+  width: 100%;
+}
+
+.form label {
+  font-size: 0.7rem;
+  margin: 0.7rem 0;
+}
+
+.form input.form-control {
+  padding: .3rem;
+  border-radius: .4rem;
+  border: solid 1px rgb(226, 226, 226);
+  font-family: inherit;
+  font-size: .7rem;
+}
+.form input.form-control::placeholder ,
+.form input.form-control::-moz-placeholder,
+.form input.form-control::-webkit-input-placeholder {
+  color: #ccc;
+}
+.form input.form-control:focus{
+  background:#ececec;
+  outline: none;
+}
+
+.form .checkbox input{
+  display: none;
+}
+.form .checkbox {
+  max-resolutio;
+}
