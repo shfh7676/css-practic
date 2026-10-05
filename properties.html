@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Properties — Horizon Properties</title>
+  <meta name="description" content="Browse premium properties for sale and rent. Filter by location, type, price, and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="asset/css/reset.css" />
+  <link rel="stylesheet" href="asset/css/variables.css" />
+  <link rel="stylesheet" href="asset/css/style.css" />
+  <link rel="stylesheet" href="asset/css/pages.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'><rect width='28' height='28' rx='6' fill='%23083F73'/><path d='M6 20V11l6-4v13H6zm8 0V7l6 4v9h-6z' fill='%23fff'/></svg>" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="site-header" class="is-scrolled">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 28 28" fill="currentColor"><path d="M3 24V11l8-5v18H3zm10 0V5l8 5v14h-8z" opacity="0.9"/><circle cx="7" cy="14" r="1.3" fill="#CDA75E"/><circle cx="7" cy="18" r="1.3" fill="#CDA75E"/><circle cx="16" cy="10" r="1.3" fill="#CDA75E"/><circle cx="19" cy="10" r="1.3" fill="#CDA75E"/><circle cx="16" cy="14" r="1.3" fill="#CDA75E"/><circle cx="19" cy="14" r="1.3" fill="#CDA75E"/></svg>
+        <span>HORIZON<span style="color:var(--gold)"> PROPERTIES</span></span>
+      </a>
+      <nav class="nav">
+        <div class="nav-item"><a href="index.html" class="nav-link">Home</a></div>
+        <div class="nav-item"><a href="properties.html" class="nav-link" style="color:var(--navy)">Properties</a></div>
+        <div class="nav-item"><a href="properties.html?filter=buy" class="nav-link">Buy</a></div>
+        <div class="nav-item"><a href="properties.html?filter=rent" class="nav-link">Rent</a></div>
+        <div class="nav-item"><a href="index.html#neighborhoods" class="nav-link">Neighborhoods</a></div>
+        <div class="nav-item"><a href="about.html" class="nav-link">About</a></div>
+        <div class="nav-item"><a href="index.html#services" class="nav-link">Services</a></div>
+        <div class="nav-item"><a href="blog.html" class="nav-link">Blog</a></div>
+        <div class="nav-item"><a href="contact.html" class="nav-link">Contact</a></div>
+      </nav>
+      <a href="tel:5552467890" class="header-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> (555) 246-7890</a>
+      <button class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div id="mobile-menu">
+    <nav class="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="properties.html">Properties</a>
+      <a href="properties.html?filter=buy">Buy</a>
+      <a href="properties.html?filter=rent">Rent</a>
+      <a href="index.html#neighborhoods">Neighborhoods</a>
+      <a href="about.html">About</a>
+      <a href="index.html#services">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-bg"><img src="https://images.unsplash.com/photo-1602343168117-bb8ffe3e2e9f?w=1920&q=80&auto=format&fit=crop" alt="Luxury properties" /></div>
+    <div class="container">
+      <div class="page-hero-content">
+        <span class="eyebrow">Browse Listings</span>
+        <h1>Find Your Next Property</h1>
+        <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Properties</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARCHIVE -->
+  <section class="section">
+    <div class="container">
+      <div class="archive-layout">
+        <!-- Sidebar -->
+        <aside class="archive-sidebar">
+          <div class="filter-group">
+            <h4>Property Type</h4>
+            <div class="filter-option"><input type="checkbox" id="t1" checked><label for="t1">Villa</label></div>
+            <div class="filter-option"><input type="checkbox" id="t2" checked><label for="t2">Apartment</label></div>
+            <div class="filter-option"><input type="checkbox" id="t3" checked><label for="t3">Penthouse</label></div>
+            <div class="filter-option"><input type="checkbox" id="t4" checked><label for="t4">Townhouse</label></div>
+            <div class="filter-option"><input type="checkbox" id="t5"><label for="t5">Waterfront</label></div>
+          </div>
+          <div class="filter-group">
+            <h4>Price Range</h4>
+            <input type="range" class="filter-range" min="0" max="10000000" step="500000" value="5000000">
+            <div class="filter-price-row"><span>$0</span><span>$10M+</span></div>
+          </div>
+          <div class="filter-group">
+            <h4>Bedrooms</h4>
+            <div class="filter-option"><input type="checkbox" id="b2"><label for="b2">2+ Bedrooms</label></div>
+            <div class="filter-option"><input type="checkbox" id="b3" checked><label for="b3">3+ Bedrooms</label></div>
+            <div class="filter-option"><input type="checkbox" id="b4" checked><label for="b4">4+ Bedrooms</label></div>
+            <div class="filter-option"><input type="checkbox" id="b5"><label for="b5">5+ Bedrooms</label></div>
+          </div>
+          <div class="filter-group">
+            <h4>Bathrooms</h4>
+            <div class="filter-option"><input type="checkbox" id="ba2"><label for="ba2">2+ Bathrooms</label></div>
+            <div class="filter-option"><input type="checkbox" id="ba3" checked><label for="ba3">3+ Bathrooms</label></div>
+            <div class="filter-option"><input type="checkbox" id="ba4"><label for="ba4">4+ Bathrooms</label></div>
+          </div>
+          <div class="filter-group">
+            <h4>Features</h4>
+            <div class="filter-option"><input type="checkbox" id="f1"><label for="f1">Swimming Pool</label></div>
+            <div class="filter-option"><input type="checkbox" id="f2"><label for="f2">Ocean View</label></div>
+            <div class="filter-option"><input type="checkbox" id="f3"><label for="f3">Garden</label></div>
+            <div class="filter-option"><input type="checkbox" id="f4"><label for="f4">Garage</label></div>
+            <div class="filter-option"><input type="checkbox" id="f5"><label for="f5">Smart Home</label></div>
+          </div>
+          <button class="btn btn-primary btn-block">Apply Filters</button>
+        </aside>
+
+        <!-- Listings -->
+        <div>
+          <div class="archive-toolbar">
+            <div class="archive-count"><strong>24</strong> properties found</div>
+            <div class="archive-controls">
+              <select class="archive-sort"><option>Newest</option><option>Price: Low to High</option><option>Price: High to Low</option><option>Most Popular</option></select>
+              <div class="view-toggle"><button class="is-active">Grid</button><button>List</button></div>
+            </div>
+          </div>
+          <div class="archive-grid" id="listing-grid">
+            <!-- Property cards -->
+            <a href="property-single.html" class="prop-card prop-card--listing" data-tag="sale"><div class="prop-card-img"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80&auto=format&fit=crop" alt="Lakeside Modern Villa" loading="lazy" /><span class="prop-card-badge prop-card-badge--sale">For Sale</span><button class="prop-card-fav" data-fav aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button></div><div class="prop-card-body"><h3>Lakeside Modern Villa</h3><div class="prop-card-location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Austin, Texas, USA</div><div class="prop-card-price">$2.35 Million</div><div class="prop-card-specs"><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20"/><path d="M6 8V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v2"/></svg><strong>4</strong> Beds</div><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12V5a2 2 0 0 1 2-2h2"/><path d="M2 12h20v2a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><path d="M7 18v2M17 18v2"/></svg><strong>5</strong> Baths</div><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg><strong>4,850</strong> sqft</div></div></div></a>
+            <a href="property-single.html" class="prop-card prop-card--listing" data-tag="new"><div class="prop-card-img"><img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80&auto=format&fit=crop" alt="Oceanview Contemporary" loading="lazy" /><span class="prop-card-badge prop-card-badge--new">New</span><button class="prop-card-fav" data-fav aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button></div><div class="prop-card-body"><h3>Oceanview Contemporary</h3><div class="prop-card-location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Miami Beach, FL</div><div class="prop-card-price">$3.95 Million</div><div class="prop-card-specs"><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20"/><path d="M6 8V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v2"/></svg><strong>5</strong> Beds</div><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12V5a2 2 0 0 1 2-2h2"/><path d="M2 12h20v2a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><path d="M7 18v2M17 18v2"/></svg><strong>6</strong> Baths</div><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg><strong>6,200</strong> sqft</div></div></div></a>
+            <a href="property-single.html" class="prop-card prop-card--listing" data-tag="rent"><div class="prop-card-img"><img src="https://images.unsplash.com/photo-1706808849780-7a04fbac83ef?w=800&q=80&auto=format&fit=crop" alt="Hillside Infinity Villa" loading="lazy" /><span class="prop-card-badge prop-card-badge--rent">For Rent</span><button class="prop-card-fav" data-fav aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button></div><div class="prop-card-body"><h3>Hillside Infinity Villa</h3><div class="prop-card-location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Palm Springs, CA</div><div class="prop-card-price">$18,000/mo</div><div class="prop-card-specs"><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20"/><path d="M6 8V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v2"/></svg><strong>4</strong> Beds</div><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12V5a2 2 0 0 1 2-2h2"/><path d="M2 12h20v2a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><path d="M7 18v2M17 18v2"/></svg><strong>4</strong> Baths</div><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg><strong>3,800</strong> sqft</div></div></div></a>
+            <a href="property-single.html" class="prop-card prop-card--listing" data-tag="sale"><div class="prop-card-img"><img src="https://images.unsplash.com/photo-1719887805632-de5be825f72b?w=800&q=80&auto=format&fit=crop" alt="Tropical Modern Retreat" loading="lazy" /><span class="prop-card-badge prop-card-badge--sale">For Sale</span><button class="prop-card-fav" data-fav aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button></div><div class="prop-card-body"><h3>Tropical Modern Retreat</h3><div class="prop-card-location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Malibu, CA</div><div class="prop-card-price">$4.50 Million</div><div class="prop-card-specs"><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20"/><path d="M6 8V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v2"/></svg><strong>5</strong> Beds</div><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12V5a2 2 0 0 1 2-2h2"/><path d="M2 12h20v2a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><path d="M7 18v2M17 18v2"/></svg><strong>5</strong> Baths</div><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg><strong>5,400</strong> sqft</div></div></div></a>
+            <a href="property-single.html" class="prop-card prop-card--listing" data-tag="featured"><div class="prop-card-img"><img src="https://images.unsplash.com/photo-1745761320791-5ae142edee8c?w=800&q=80&auto=format&fit=crop" alt="Palm Court Estate" loading="lazy" /><span class="prop-card-badge prop-card-badge--sale">Featured</span><button class="prop-card-fav" data-fav aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button></div><div class="prop-card-body"><h3>Palm Court Estate</h3><div class="prop-card-location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Beverly Hills, CA</div><div class="prop-card-price">$6.20 Million</div><div class="prop-card-specs"><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20"/><path d="M6 8V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v2"/></svg><strong>6</strong> Beds</div><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12V5a2 2 0 0 1 2-2h2"/><path d="M2 12h20v2a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><path d="M7 18v2M17 18v2"/></svg><strong>7</strong> Baths</div><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg><strong>7,800</strong> sqft</div></div></div></a>
+            <a href="property-single.html" class="prop-card prop-card--listing" data-tag="new"><div class="prop-card-img"><img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&q=80&auto=format&fit=crop" alt="Skyline Penthouse" loading="lazy" /><span class="prop-card-badge prop-card-badge--new">New</span><button class="prop-card-fav" data-fav aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button></div><div class="prop-card-body"><h3>Skyline Penthouse</h3><div class="prop-card-location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Manhattan, NY</div><div class="prop-card-price">$8.90 Million</div><div class="prop-card-specs"><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20"/><path d="M6 8V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v2"/></svg><strong>4</strong> Beds</div><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12V5a2 2 0 0 1 2-2h2"/><path d="M2 12h20v2a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><path d="M7 18v2M17 18v2"/></svg><strong>5</strong> Baths</div><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg><strong>5,200</strong> sqft</div></div></div></a>
+            <a href="property-single.html" class="prop-card prop-card--listing" data-tag="sale"><div class="prop-card-img"><img src="https://images.unsplash.com/photo-1670589953882-b94c9cb380f5?w=800&q=80&auto=format&fit=crop" alt="Glass Pavilion Estate" loading="lazy" /><span class="prop-card-badge prop-card-badge--sale">For Sale</span><button class="prop-card-fav" data-fav aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button></div><div class="prop-card-body"><h3>Glass Pavilion Estate</h3><div class="prop-card-location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Beverly Hills, CA</div><div class="prop-card-price">$5.80 Million</div><div class="prop-card-specs"><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20"/><path d="M6 8V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v2"/></svg><strong>5</strong> Beds</div><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12V5a2 2 0 0 1 2-2h2"/><path d="M2 12h20v2a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><path d="M7 18v2M17 18v2"/></svg><strong>6</strong> Baths</div><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg><strong>6,500</strong> sqft</div></div></div></a>
+            <a href="property-single.html" class="prop-card prop-card--listing" data-tag="rent"><div class="prop-card-img"><img src="https://images.unsplash.com/photo-1741213080697-a1011624e71b?w=800&q=80&auto=format&fit=crop" alt="Waterfront Modern" loading="lazy" /><span class="prop-card-badge prop-card-badge--rent">For Rent</span><button class="prop-card-fav" data-fav aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button></div><div class="prop-card-body"><h3>Waterfront Modern</h3><div class="prop-card-location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Dubai, UAE</div><div class="prop-card-price">$22,000/mo</div><div class="prop-card-specs"><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20"/><path d="M6 8V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v2"/></svg><strong>3</strong> Beds</div><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12V5a2 2 0 0 1 2-2h2"/><path d="M2 12h20v2a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><path d="M7 18v2M17 18v2"/></svg><strong>4</strong> Baths</div><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg><strong>3,200</strong> sqft</div></div></div></a>
+            <a href="property-single.html" class="prop-card prop-card--listing" data-tag="sale"><div class="prop-card-img"><img src="https://images.unsplash.com/photo-1722421492323-eaf9c401befe?w=800&q=80&auto=format&fit=crop" alt="Dusk Residence" loading="lazy" /><span class="prop-card-badge prop-card-badge--sale">For Sale</span><button class="prop-card-fav" data-fav aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button></div><div class="prop-card-body"><h3>Dusk Residence</h3><div class="prop-card-location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> London, UK</div><div class="prop-card-price">$7.40 Million</div><div class="prop-card-specs"><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20"/><path d="M6 8V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v2"/></svg><strong>5</strong> Beds</div><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12V5a2 2 0 0 1 2-2h2"/><path d="M2 12h20v2a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><path d="M7 18v2M17 18v2"/></svg><strong>6</strong> Baths</div><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg><strong>5,800</strong> sqft</div></div></div></a>
+          </div>
+          <div class="archive-pagination">
+            <button class="page-btn"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></button>
+            <button class="page-btn is-active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <button class="page-btn"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="color:var(--white)"><svg viewBox="0 0 28 28" fill="currentColor"><path d="M3 24V11l8-5v18H3zm10 0V5l8 5v14h-8z" opacity="0.9"/><circle cx="7" cy="14" r="1.3" fill="#CDA75E"/><circle cx="7" cy="18" r="1.3" fill="#CDA75E"/><circle cx="16" cy="10" r="1.3" fill="#CDA75E"/><circle cx="19" cy="10" r="1.3" fill="#CDA75E"/><circle cx="16" cy="14" r="1.3" fill="#CDA75E"/><circle cx="19" cy="14" r="1.3" fill="#CDA75E"/></svg><span>HORIZON PROPERTIES</span></a>
+          <p>Premium real estate advisory connecting discerning clients with exceptional properties worldwide.</p>
+          <div class="footer-socials"><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a><a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg></a><a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a></div>
+        </div>
+        <div class="footer-col"><h4>Properties</h4><ul><li><a href="properties.html">Buy</a></li><li><a href="properties.html">Rent</a></li><li><a href="properties.html">New Developments</a></li><li><a href="properties.html">Neighborhoods</a></li></ul></div>
+        <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="index.html#team">Team</a></li><li><a href="contact.html">Careers</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Resources</h4><ul><li><a href="blog.html">Insights</a></li><li><a href="blog.html">Guides</a></li><li><a href="contact.html">FAQ</a></li></ul></div>
+        <div class="footer-col"><h4>Stay Connected</h4><ul class="footer-contact"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> (555) 246-7890</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> hello@horizonprops.com</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 1200 Brickell Ave, Miami FL</li></ul><form class="footer-newsletter" onsubmit="return false"><input type="email" placeholder="Your email" /><button type="submit">Subscribe</button></form></div>
+      </div>
+      <div class="footer-bottom"><span>&copy; <span data-year>2026</span> Horizon Properties. All rights reserved.</span><div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div></div>
+    </div>
+  </footer>
+
+  <script src="asset/js/main.js"></script>
+</body>
+</html>

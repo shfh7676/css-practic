@@ -1,170 +1,468 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>طراحی سایت قالب فروشگاهی</title>
-    <link rel="stylesheet" href="./asset/css/fonts.css" />
-    <link rel="stylesheet" href="./asset/css/reset.css" />
-    <link rel="stylesheet" href="./asset/css/style.css" />
-    
-  </head>
-  <body dir="rtl">
-     <!-- <div class="container">
-      <div class="form">
-        <h2>ثبت فرم</h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Horizon Properties — Premium Real Estate & Investments</title>
+  <meta name="description" content="Discover exceptional homes and investments in prime locations. Horizon Properties offers premium real estate, luxury villas, penthouses, and investment opportunities." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="asset/css/reset.css" />
+  <link rel="stylesheet" href="asset/css/variables.css" />
+  <link rel="stylesheet" href="asset/css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'><rect width='28' height='28' rx='6' fill='%23083F73'/><path d='M6 20V11l6-4v13H6zm8 0V7l6 4v9h-6z' fill='%23fff'/></svg>" />
+</head>
+<body>
 
-        <form action="">
-          <label for="name">نام</label>
-          <input class="form-control" id="name" type="text" name="name" placeholder="نام خود را وارد کنید" />
+  <!-- ===== HEADER ===== -->
+  <header id="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 28 28" fill="currentColor"><path d="M3 24V11l8-5v18H3zm10 0V5l8 5v14h-8z" opacity="0.9"/><circle cx="7" cy="14" r="1.3" fill="#CDA75E"/><circle cx="7" cy="18" r="1.3" fill="#CDA75E"/><circle cx="16" cy="10" r="1.3" fill="#CDA75E"/><circle cx="19" cy="10" r="1.3" fill="#CDA75E"/><circle cx="16" cy="14" r="1.3" fill="#CDA75E"/><circle cx="19" cy="14" r="1.3" fill="#CDA75E"/></svg>
+        <span>HORIZON<span style="color:var(--gold)"> PROPERTIES</span></span>
+      </a>
 
-          <label for="email">ایمیل</label>
-          <input class="form-control" id="email" type="email" name="email" placeholder="ایمیل خود را وارد کنید" />
-
-          <label for="password">رمز عبور</label>
-          <input class="form-control" id="password" type="password" name="password" placeholder="رمز عبور خود را وارد کنید" />
-
-          <label for="confirm-password">تکرار رمز عبور</label>
-          <input class="form-control" id="confirm-password" type="password" name="confirm-password" placeholder="تکرار رمز عبور" />
-          
-          <label for="rules" class="checkbox">
-            <input type="checkbox" name="rules" id="rules" />با قوانین موافقم
-            <span class="checkmark"></span>
-          </label>
-
-          <button class="btn btn-success btn-full" type="submit">ارسال</button>
-        </form>
-      </div>
-    </div> -->
-    
-    <header>
-      <div class="container">
-        <div>
-          <img class="logo" src="./asset/images/logo-sample.png" alt=""> 
+      <nav class="nav">
+        <div class="nav-item"><a href="index.html" class="nav-link">Home</a></div>
+        <div class="nav-item has-mega">
+          <a href="properties.html" class="nav-link">Properties <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a>
+          <div class="mega-panel">
+            <div class="mega-col">
+              <h4>Residential</h4>
+              <ul>
+                <li><a href="properties.html">Villas</a></li>
+                <li><a href="properties.html">Apartments</a></li>
+                <li><a href="properties.html">Penthouses</a></li>
+                <li><a href="properties.html">Townhouses</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <h4>Commercial</h4>
+              <ul>
+                <li><a href="properties.html">Offices</a></li>
+                <li><a href="properties.html">Retail</a></li>
+                <li><a href="properties.html">Hospitality</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <h4>Lifestyle</h4>
+              <ul>
+                <li><a href="properties.html">Waterfront</a></li>
+                <li><a href="properties.html">Golf Properties</a></li>
+                <li><a href="properties.html">Mountain Homes</a></li>
+                <li><a href="properties.html">Gated Communities</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <h4>Investment</h4>
+              <ul>
+                <li><a href="properties.html">Off-plan</a></li>
+                <li><a href="properties.html">Rental Yield</a></li>
+                <li><a href="properties.html">New Developments</a></li>
+                <li><a href="properties.html">Investment Opportunities</a></li>
+              </ul>
+            </div>
+            <div class="mega-feature">
+              <img src="https://images.unsplash.com/photo-1670589953882-b94c9cb380f5?w=400&q=80&auto=format&fit=crop" alt="Featured property" loading="lazy" />
+              <div class="mega-feature-overlay">
+                <h5>Skyline Residence</h5>
+                <p>From $3.2M — Austin, Texas</p>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="nav-item"><a href="properties.html?filter=buy" class="nav-link">Buy</a></div>
+        <div class="nav-item"><a href="properties.html?filter=rent" class="nav-link">Rent</a></div>
+        <div class="nav-item"><a href="index.html#neighborhoods" class="nav-link">Neighborhoods</a></div>
+        <div class="nav-item"><a href="about.html" class="nav-link">About</a></div>
+        <div class="nav-item"><a href="index.html#services" class="nav-link">Services</a></div>
+        <div class="nav-item"><a href="blog.html" class="nav-link">Blog</a></div>
+        <div class="nav-item"><a href="contact.html" class="nav-link">Contact</a></div>
+      </nav>
 
-        <div>
-           <span class="phone">02112345678</span>
-            <a class="btn btn-success" href="">ورود به سایت </a>
-        </div>
-      </div>
-      <div class="container menu">
-        <ul>
-          <li><a href="">صفحه نخست</a></li>
-          <li><a href="">درباره ما</a></li>
-          <li><a href="">تماس با ما</a></li>
-          <li><a href="">قوانین</a></li>
-        </ul>
-      </div>
+      <a href="tel:5552467890" class="header-cta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        (555) 246-7890
+      </a>
 
-    </header>
-    <section class="top-section">
-        <div class="container">
-          <h1>طراحی قالب اختصاصی فروشگاهی</h1>
-        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
-        <form action="" class="form">
-          <input type="text" placeholder="دنبال چی میگردی؟">
-          <button type="submit">جستجو</button>
-        </form>
-        </div>
-    </section>
-    <main>
-
-      <div class="container">
-        <aside class="sidebar">
-          <h3>دسترسی سریع</h3>
-        <ul> 
-          <li><a href="">لینک اول</a></li>
-          <li><a href="">لینک دوم </a></li>
-          <li><a href="">لینک سوم </a></li>
-        </ul>
-      </aside>
-      
-      <section class="products">
-          <article class="product">
-            <span class="off-label">40% تخفیف</span>
-            <div class="cover">
-              <img src="/asset/images/background-image.webp" alt="عنوان محصول">
-              <h2 class="title">عنوان محصول</h2>
-              <p class="description">توضیح کوتاه در ارتباط با محصول</p>
-              <a class="btn btn-success btn-full" href="">مشاهده و خرید محصول</a>
-            </div>
-          </article>
-
-
-           <article class="product">
-            <span class="off-label">40% تخفیف</span>
-            <div class="cover">
-              <img src="/asset/images/background-image.webp" alt="عنوان محصول">
-              <h2 class="title">عنوان محصول</h2>
-              <p class="description">توضیح کوتاه در ارتباط با محصول</p>
-              <a class="btn btn-success btn-full" href="">مشاهده و خرید محصول</a>
-            </div>
-          </article>
-
-
-           <article class="product">
-           <span class="off-label">40% تخفیف</span>
-            <div class="cover">
-              <img src="/asset/images/background-image.webp" alt="عنوان محصول">
-              <h2 class="title">عنوان محصول</h2>
-              <p class="description">توضیح کوتاه در ارتباط با محصول</p>
-              <a class="btn btn-success btn-full" href="">مشاهده و خرید محصول</a>
-            </div>
-          </article>
-
-
-           <article class="product">
-             <span class="off-label">40% تخفیف</span>
-            <div class="cover">
-              <img src="/asset/images/background-image.webp" alt="عنوان محصول">
-              <h2 class="title">عنوان محصول</h2>
-              <p class="description">توضیح کوتاه در ارتباط با محصول</p>
-              <a class="btn btn-success btn-full" href="">مشاهده و خرید محصول</a>
-            </div>
-          </article>
-
-
-      </section>
-      
-      </div>
-
-    </main>
-
-    <footer>
-      <div class="container">
-        <div class="content">
-          <div class="col">
-        <h3 class="title">درباره ما</h3>
-        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
-      </div>
-      <div class="col">
-        <h3 class="title">راهنما</h3>
-        <ul>
-          <li><a href="">لینک اول</a></li>
-          <li><a href="">لینک دوم</a></li>
-        </ul>
-      </div>
-      <div class="col">
-        <h3 class="title">ارتباط با ما</h3>
-        <ul>
-          <li>شماره تماس : 02122323861</li>
-          <li>ایمیل : info@gmail.com</li>
-          <li>آدرس : تهران </li>
-        </ul>
-      </div>
-      </div>
-      <div class="copyright">
-        تمامی حقوق مادی و معنوی این سایت محفوظ است.
-      </div>
-      </div>
-    </footer>
-    <div class="phone-fixed">
-      <span>02112345646</span>
+      <button class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
+  </header>
 
+  <!-- ===== MOBILE MENU ===== -->
+  <div id="mobile-menu">
+    <nav class="mobile-nav">
+      <a href="index.html">Home</a>
+      <div class="mobile-accordion"><span>Properties <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></span>
+        <div class="mobile-sub">
+          <a href="properties.html">Villas</a>
+          <a href="properties.html">Apartments</a>
+          <a href="properties.html">Penthouses</a>
+          <a href="properties.html">Townhouses</a>
+          <a href="properties.html">Waterfront</a>
+          <a href="properties.html">New Developments</a>
+        </div>
+      </div>
+      <a href="properties.html?filter=buy">Buy</a>
+      <a href="properties.html?filter=rent">Rent</a>
+      <a href="index.html#neighborhoods">Neighborhoods</a>
+      <a href="about.html">About</a>
+      <a href="index.html#services">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="mobile-menu-cta">
+      <a href="tel:5552467890" class="btn btn-primary btn-block">(555) 246-7890</a>
+    </div>
+  </div>
 
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1602343168117-bb8ffe3e2e9f?w=1920&q=80&auto=format&fit=crop" alt="Modern luxury villa at dusk with swimming pool" />
+    </div>
+    <div class="hero-content">
+      <span class="eyebrow">Premium Real Estate</span>
+      <h1>Discover Exceptional<br />Homes &amp; Investments</h1>
+      <p>Explore extraordinary properties in prime locations. Find a home, lifestyle, or investment that truly fits your vision.</p>
+      <div class="hero-actions">
+        <a href="properties.html" class="btn btn-primary btn-lg">Explore Properties <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a href="contact.html" class="btn btn-light btn-lg">Speak With an Advisor</a>
+      </div>
+    </div>
+  </section>
 
+  <!-- ===== SEARCH PANEL ===== -->
+  <div class="search-panel">
+    <form class="search-panel-inner" action="properties.html">
+      <div class="search-field">
+        <label>Location</label>
+        <select><option>Any Location</option><option>Miami Beach</option><option>Beverly Hills</option><option>Austin</option><option>Manhattan</option><option>Dubai</option><option>London</option></select>
+      </div>
+      <div class="search-field">
+        <label>Property Type</label>
+        <select><option>Any Type</option><option>Villa</option><option>Apartment</option><option>Penthouse</option><option>Townhouse</option><option>Waterfront</option></select>
+      </div>
+      <div class="search-field">
+        <label>Buy / Rent</label>
+        <select><option>For Sale</option><option>For Rent</option></select>
+      </div>
+      <div class="search-field">
+        <label>Price Range</label>
+        <select><option>Any Price</option><option>$1M – $3M</option><option>$3M – $5M</option><option>$5M – $10M</option><option>$10M+</option></select>
+      </div>
+      <div class="search-field">
+        <label>Bedrooms</label>
+        <select><option>Any</option><option>2+</option><option>3+</option><option>4+</option><option>5+</option></select>
+      </div>
+      <button type="submit" class="search-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Search</button>
+    </form>
+  </div>
 
-  </body>
+  <!-- ===== ABOUT ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text" data-reveal>
+          <span class="eyebrow">About Us</span>
+          <h2 class="section-title" style="margin-bottom:20px">Who We Are</h2>
+          <p>Horizon Properties is a premier real estate advisory specializing in luxury homes and investment opportunities across the world's most sought-after destinations. With over 15 years of experience, we connect discerning clients with exceptional properties that reflect their lifestyle and aspirations.</p>
+          <p>Our team of seasoned advisors brings deep market intelligence, global network access, and a commitment to seamless, personalized service — guiding you every step of the way.</p>
+          <a href="about.html" class="btn btn-primary" style="margin-top:8px">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          <div class="about-features">
+            <div class="about-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg><span>15+ Years Experience</span></div>
+            <div class="about-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><span>38 Global Markets</span></div>
+          </div>
+        </div>
+        <div class="about-images" data-slider data-reveal data-delay="1">
+          <div class="about-img-main" data-slide class="is-active"><img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=900&q=80&auto=format&fit=crop" alt="Modern luxury home exterior" loading="lazy" /></div>
+          <div class="about-img-main" data-slide style="display:none"><img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=900&q=80&auto=format&fit=crop" alt="Contemporary villa architecture" loading="lazy" /></div>
+          <div class="about-img-secondary"><img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=600&q=80&auto=format&fit=crop" alt="Luxury interior living room" loading="lazy" /></div>
+          <button class="about-slider-arrow" data-prev aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="section--tight">
+    <div class="container">
+      <div class="stats-row" data-reveal>
+        <div class="stats">
+          <div class="stat-item"><div class="stat-num" data-count="15" data-suffix="+">15+</div><div class="stat-label">Years of Excellence</div></div>
+          <div class="stat-item"><div class="stat-num" data-count="1.2" data-suffix="B+">$1.2B+</div><div class="stat-label">Property Value Sold</div></div>
+          <div class="stat-item"><div class="stat-num" data-count="480" data-suffix="+">480+</div><div class="stat-label">Premium Properties</div></div>
+          <div class="stat-item"><div class="stat-num" data-count="38" data-suffix="">38</div><div class="stat-label">International Markets</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED PROPERTIES ===== -->
+  <section class="section bg-soft">
+    <div class="container">
+      <div class="section-head section-head--row" data-reveal>
+        <div>
+          <span class="eyebrow">Featured</span>
+          <h2 class="section-title">Featured Properties</h2>
+        </div>
+        <div class="carousel-arrows">
+          <button class="carousel-arrow" data-prev aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg></button>
+          <button class="carousel-arrow" data-next aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+        </div>
+      </div>
+      <div class="carousel" data-carousel data-reveal data-delay="1">
+        <div class="carousel-track" data-track>
+          <div class="carousel-card"><article class="prop-card">
+            <div class="prop-card-img"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80&auto=format&fit=crop" alt="Lakeside Modern Villa" loading="lazy" /><span class="prop-card-badge prop-card-badge--sale">For Sale</span><button class="prop-card-fav" data-fav aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button><div class="prop-card-overlay"><h3>Lakeside Modern Villa</h3><div class="prop-card-location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Austin, Texas, USA</div><div class="prop-card-price">$2.35 Million</div></div></div>
+          </article></div>
+          <div class="carousel-card"><article class="prop-card">
+            <div class="prop-card-img"><img src="https://images.unsplash.com/photo-1670589953882-b94c9cb380f5?w=600&q=80&auto=format&fit=crop" alt="Glass Pavilion Estate" loading="lazy" /><span class="prop-card-badge prop-card-badge--new">New</span><button class="prop-card-fav" data-fav aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button><div class="prop-card-overlay"><h3>Glass Pavilion Estate</h3><div class="prop-card-location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Beverly Hills, CA</div><div class="prop-card-price">$5.80 Million</div></div></div>
+          </article></div>
+          <div class="carousel-card"><article class="prop-card">
+            <div class="prop-card-img"><img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=600&q=80&auto=format&fit=crop" alt="Oceanview Contemporary" loading="lazy" /><span class="prop-card-badge prop-card-badge--sale">For Sale</span><button class="prop-card-fav" data-fav aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button><div class="prop-card-overlay"><h3>Oceanview Contemporary</h3><div class="prop-card-location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Miami Beach, FL</div><div class="prop-card-price">$3.95 Million</div></div></div>
+          </article></div>
+          <div class="carousel-card"><article class="prop-card">
+            <div class="prop-card-img"><img src="https://images.unsplash.com/photo-1706808849780-7a04fbac83ef?w=600&q=80&auto=format&fit=crop" alt="Hillside Infinity Villa" loading="lazy" /><span class="prop-card-badge prop-card-badge--rent">For Rent</span><button class="prop-card-fav" data-fav aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button><div class="prop-card-overlay"><h3>Hillside Infinity Villa</h3><div class="prop-card-location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Palm Springs, CA</div><div class="prop-card-price">$18,000/mo</div></div></div>
+          </article></div>
+          <div class="carousel-card"><article class="prop-card">
+            <div class="prop-card-img"><img src="https://images.unsplash.com/photo-1719887805632-de5be825f72b?w=600&q=80&auto=format&fit=crop" alt="Tropical Modern Retreat" loading="lazy" /><span class="prop-card-badge prop-card-badge--sale">For Sale</span><button class="prop-card-fav" data-fav aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button><div class="prop-card-overlay"><h3>Tropical Modern Retreat</h3><div class="prop-card-location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Malibu, CA</div><div class="prop-card-price">$4.50 Million</div></div></div>
+          </article></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LIFESTYLE CATEGORIES ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <span class="eyebrow eyebrow--center">Categories</span>
+        <h2 class="section-title">Explore by Lifestyle</h2>
+        <p class="section-lead section-lead--center">Discover properties tailored to your way of living — from waterfront estates to city penthouses.</p>
+      </div>
+      <div class="lifestyle-grid" data-reveal data-delay="1">
+        <a href="properties.html" class="lifestyle-card"><img src="https://images.unsplash.com/photo-1602343168117-bb8ffe3e2e9f?w=800&q=80&auto=format&fit=crop" alt="Luxury Villas" loading="lazy" /><div class="lifestyle-card-overlay"><h3>Luxury Villas</h3><span>128 properties</span><span class="lifestyle-arrow">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></div></a>
+        <a href="properties.html" class="lifestyle-card"><img src="https://images.unsplash.com/photo-1741213080697-a1011624e71b?w=600&q=80&auto=format&fit=crop" alt="Waterfront Homes" loading="lazy" /><div class="lifestyle-card-overlay"><h3>Waterfront Homes</h3><span>86 properties</span><span class="lifestyle-arrow">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></div></a>
+        <a href="properties.html" class="lifestyle-card"><img src="https://images.unsplash.com/photo-1561321698-40ae82a47b9e?w=600&q=80&auto=format&fit=crop" alt="City Apartments" loading="lazy" /><div class="lifestyle-card-overlay"><h3>City Apartments</h3><span>214 properties</span><span class="lifestyle-arrow">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></div></a>
+        <a href="properties.html" class="lifestyle-card"><img src="https://images.unsplash.com/photo-1721815693498-cc28507c0ba2?w=600&q=80&auto=format&fit=crop" alt="Penthouses" loading="lazy" /><div class="lifestyle-card-overlay"><h3>Penthouses</h3><span>42 properties</span><span class="lifestyle-arrow">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></div></a>
+        <a href="properties.html" class="lifestyle-card"><img src="https://images.unsplash.com/photo-1628012209120-d9db7abf7eab?w=600&q=80&auto=format&fit=crop" alt="Family Homes" loading="lazy" /><div class="lifestyle-card-overlay"><h3>Family Homes</h3><span>167 properties</span><span class="lifestyle-arrow">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></div></a>
+        <a href="properties.html" class="lifestyle-card"><img src="https://images.unsplash.com/photo-1722421492323-eaf9c401befe?w=600&q=80&auto=format&fit=crop" alt="Investment Properties" loading="lazy" /><div class="lifestyle-card-overlay"><h3>Investment Properties</h3><span>93 properties</span><span class="lifestyle-arrow">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></div></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SIGNATURE PROPERTY ===== -->
+  <section class="section bg-soft">
+    <div class="container">
+      <div class="signature-grid">
+        <div class="signature-img" data-reveal><img src="https://images.unsplash.com/photo-1670589953903-b4e2f17a70a9?w=900&q=80&auto=format&fit=crop" alt="The Azure Residence" loading="lazy" /></div>
+        <div class="signature-content" data-reveal data-delay="1">
+          <span class="eyebrow">Signature Development</span>
+          <h2 class="section-title">The Azure Residence</h2>
+          <p style="color:var(--text-secondary);margin-top:16px">A contemporary waterfront villa designed for elevated modern living. Floor-to-ceiling glass, private infinity pool, and seamless indoor-outdoor flow define this architectural masterpiece.</p>
+          <div class="signature-location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Miami Beach, Florida</div>
+          <div class="signature-price">From $4.8M</div>
+          <div class="signature-specs">
+            <div class="signature-spec"><strong>6</strong><span>Bedrooms</span></div>
+            <div class="signature-spec"><strong>7</strong><span>Bathrooms</span></div>
+            <div class="signature-spec"><strong>8,200</strong><span>Sq Ft</span></div>
+            <div class="signature-spec"><strong>2025</strong><span>Year Built</span></div>
+          </div>
+          <a href="property-single.html" class="btn btn-primary">View Residence <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROPERTY LISTINGS ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <span class="eyebrow eyebrow--center">Available Now</span>
+        <h2 class="section-title">Property Listings</h2>
+      </div>
+      <div class="filter-tabs" data-filter-tabs data-target="#listing-grid" style="justify-content:center;margin-bottom:40px" data-reveal>
+        <button class="filter-tab is-active" data-tab data-filter="all">All</button>
+        <button class="filter-tab" data-tab data-filter="sale">For Sale</button>
+        <button class="filter-tab" data-tab data-filter="rent">For Rent</button>
+        <button class="filter-tab" data-tab data-filter="new">New Development</button>
+        <button class="filter-tab" data-tab data-filter="featured">Featured</button>
+      </div>
+      <div class="listings-grid" id="listing-grid" data-reveal data-delay="1">
+        <a href="property-single.html" class="prop-card prop-card--listing" data-tag="sale"><div class="prop-card-img"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80&auto=format&fit=crop" alt="Lakeside Modern Villa" loading="lazy" /><span class="prop-card-badge prop-card-badge--sale">For Sale</span><button class="prop-card-fav" data-fav aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button></div><div class="prop-card-body"><h3>Lakeside Modern Villa</h3><div class="prop-card-location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Austin, Texas, USA</div><div class="prop-card-price">$2.35 Million</div><div class="prop-card-specs"><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20"/><path d="M6 8V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v2"/></svg><strong>4</strong> Beds</div><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12V5a2 2 0 0 1 2-2h2"/><path d="M2 12h20v2a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><path d="M7 18v2M17 18v2"/></svg><strong>5</strong> Baths</div><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg><strong>4,850</strong> sqft</div></div></div></a>
+        <a href="property-single.html" class="prop-card prop-card--listing" data-tag="new"><div class="prop-card-img"><img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80&auto=format&fit=crop" alt="Oceanview Contemporary" loading="lazy" /><span class="prop-card-badge prop-card-badge--new">New</span><button class="prop-card-fav" data-fav aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button></div><div class="prop-card-body"><h3>Oceanview Contemporary</h3><div class="prop-card-location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Miami Beach, FL</div><div class="prop-card-price">$3.95 Million</div><div class="prop-card-specs"><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20"/><path d="M6 8V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v2"/></svg><strong>5</strong> Beds</div><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12V5a2 2 0 0 1 2-2h2"/><path d="M2 12h20v2a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><path d="M7 18v2M17 18v2"/></svg><strong>6</strong> Baths</div><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg><strong>6,200</strong> sqft</div></div></div></a>
+        <a href="property-single.html" class="prop-card prop-card--listing" data-tag="rent"><div class="prop-card-img"><img src="https://images.unsplash.com/photo-1706808849780-7a04fbac83ef?w=800&q=80&auto=format&fit=crop" alt="Hillside Infinity Villa" loading="lazy" /><span class="prop-card-badge prop-card-badge--rent">For Rent</span><button class="prop-card-fav" data-fav aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button></div><div class="prop-card-body"><h3>Hillside Infinity Villa</h3><div class="prop-card-location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Palm Springs, CA</div><div class="prop-card-price">$18,000/mo</div><div class="prop-card-specs"><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20"/><path d="M6 8V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v2"/></svg><strong>4</strong> Beds</div><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12V5a2 2 0 0 1 2-2h2"/><path d="M2 12h20v2a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><path d="M7 18v2M17 18v2"/></svg><strong>4</strong> Baths</div><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg><strong>3,800</strong> sqft</div></div></div></a>
+        <a href="property-single.html" class="prop-card prop-card--listing" data-tag="sale"><div class="prop-card-img"><img src="https://images.unsplash.com/photo-1719887805632-de5be825f72b?w=800&q=80&auto=format&fit=crop" alt="Tropical Modern Retreat" loading="lazy" /><span class="prop-card-badge prop-card-badge--sale">For Sale</span><button class="prop-card-fav" data-fav aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button></div><div class="prop-card-body"><h3>Tropical Modern Retreat</h3><div class="prop-card-location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Malibu, CA</div><div class="prop-card-price">$4.50 Million</div><div class="prop-card-specs"><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20"/><path d="M6 8V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v2"/></svg><strong>5</strong> Beds</div><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12V5a2 2 0 0 1 2-2h2"/><path d="M2 12h20v2a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><path d="M7 18v2M17 18v2"/></svg><strong>5</strong> Baths</div><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg><strong>5,400</strong> sqft</div></div></div></a>
+        <a href="property-single.html" class="prop-card prop-card--listing" data-tag="featured"><div class="prop-card-img"><img src="https://images.unsplash.com/photo-1745761320791-5ae142edee8c?w=800&q=80&auto=format&fit=crop" alt="Palm Court Estate" loading="lazy" /><span class="prop-card-badge prop-card-badge--sale">Featured</span><button class="prop-card-fav" data-fav aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button></div><div class="prop-card-body"><h3>Palm Court Estate</h3><div class="prop-card-location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Beverly Hills, CA</div><div class="prop-card-price">$6.20 Million</div><div class="prop-card-specs"><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20"/><path d="M6 8V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v2"/></svg><strong>6</strong> Beds</div><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12V5a2 2 0 0 1 2-2h2"/><path d="M2 12h20v2a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><path d="M7 18v2M17 18v2"/></svg><strong>7</strong> Baths</div><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg><strong>7,800</strong> sqft</div></div></div></a>
+        <a href="property-single.html" class="prop-card prop-card--listing" data-tag="new"><div class="prop-card-img"><img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&q=80&auto=format&fit=crop" alt="Skyline Penthouse" loading="lazy" /><span class="prop-card-badge prop-card-badge--new">New</span><button class="prop-card-fav" data-fav aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button></div><div class="prop-card-body"><h3>Skyline Penthouse</h3><div class="prop-card-location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Manhattan, NY</div><div class="prop-card-price">$8.90 Million</div><div class="prop-card-specs"><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20"/><path d="M6 8V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v2"/></svg><strong>4</strong> Beds</div><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12V5a2 2 0 0 1 2-2h2"/><path d="M2 12h20v2a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><path d="M7 18v2M17 18v2"/></svg><strong>5</strong> Baths</div><div class="prop-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg><strong>5,200</strong> sqft</div></div></div></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEIGHBORHOODS ===== -->
+  <section class="section bg-soft" id="neighborhoods">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <span class="eyebrow eyebrow--center">Locations</span>
+        <h2 class="section-title">Explore Exceptional Neighborhoods</h2>
+        <p class="section-lead section-lead--center">From sun-soaked coastlines to vibrant city centers, find your perfect setting.</p>
+      </div>
+      <div class="neighborhood-grid" data-reveal data-delay="1">
+        <a href="properties.html" class="neighborhood-card"><img src="https://images.unsplash.com/photo-1695259496167-c05f25f1d793?w=800&q=80&auto=format&fit=crop" alt="Miami Beach" loading="lazy" /><div class="neighborhood-overlay"><h3>Miami Beach</h3><span>124 properties</span></div><div class="neighborhood-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div></a>
+        <a href="properties.html" class="neighborhood-card"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80&auto=format&fit=crop" alt="Beverly Hills" loading="lazy" /><div class="neighborhood-overlay"><h3>Beverly Hills</h3><span>98 properties</span></div><div class="neighborhood-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div></a>
+        <a href="properties.html" class="neighborhood-card"><img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=600&q=80&auto=format&fit=crop" alt="Austin" loading="lazy" /><div class="neighborhood-overlay"><h3>Austin</h3><span>76 properties</span></div><div class="neighborhood-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div></a>
+        <a href="properties.html" class="neighborhood-card"><img src="https://images.unsplash.com/photo-1561321698-40ae82a47b9e?w=600&q=80&auto=format&fit=crop" alt="Manhattan" loading="lazy" /><div class="neighborhood-overlay"><h3>Manhattan</h3><span>112 properties</span></div><div class="neighborhood-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div></a>
+        <a href="properties.html" class="neighborhood-card"><img src="https://images.unsplash.com/photo-1719887805632-de5be825f72b?w=600&q=80&auto=format&fit=crop" alt="Palm Springs" loading="lazy" /><div class="neighborhood-overlay"><h3>Palm Springs</h3><span>54 properties</span></div><div class="neighborhood-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div></a>
+        <a href="properties.html" class="neighborhood-card"><img src="https://images.unsplash.com/photo-1741213080553-e96ea1952b63?w=600&q=80&auto=format&fit=crop" alt="Dubai" loading="lazy" /><div class="neighborhood-overlay"><h3>Dubai</h3><span>89 properties</span></div><div class="neighborhood-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div></a>
+        <a href="properties.html" class="neighborhood-card"><img src="https://images.unsplash.com/photo-1745761320791-5ae142edee8c?w=600&q=80&auto=format&fit=crop" alt="London" loading="lazy" /><div class="neighborhood-overlay"><h3>London</h3><span>67 properties</span></div><div class="neighborhood-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE US ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="why-grid">
+        <div data-reveal>
+          <span class="eyebrow">Why Horizon</span>
+          <h2 class="section-title" style="margin-bottom:20px">A Different Approach to Real Estate</h2>
+          <p style="color:var(--text-secondary);margin-bottom:36px">We combine deep market intelligence with a truly personal approach. Every client receives dedicated advisory tailored to their goals — whether finding a dream home or building an investment portfolio.</p>
+          <div class="why-features">
+            <div class="why-feature"><div class="why-feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div><h3>Market Expertise</h3><p>Deep intelligence across 38 international markets.</p></div>
+            <div class="why-feature"><div class="why-feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div><h3>Private Listings</h3><p>Access to off-market properties you won't find elsewhere.</p></div>
+            <div class="why-feature"><div class="why-feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><h3>Global Network</h3><p>Connected to advisors and partners worldwide.</p></div>
+            <div class="why-feature"><div class="why-feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3>Personalized Advisory</h3><p>Dedicated advisors for every step of your journey.</p></div>
+          </div>
+        </div>
+        <div class="why-img" data-reveal data-delay="1"><img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&q=80&auto=format&fit=crop" alt="Luxury property architecture" loading="lazy" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="section bg-soft" id="services">
+    <div class="container container--narrow">
+      <div class="section-head section-head--center" data-reveal>
+        <span class="eyebrow eyebrow--center">What We Do</span>
+        <h2 class="section-title">Our Services</h2>
+      </div>
+      <div class="services-list" data-reveal data-delay="1">
+        <a href="contact.html" class="service-item"><span class="service-num">01</span><div class="service-info"><h3>Property Acquisition</h3><p>From search to closing, we handle every detail of acquiring your ideal property.</p></div><span class="service-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a>
+        <a href="contact.html" class="service-item"><span class="service-num">02</span><div class="service-info"><h3>Investment Advisory</h3><p>Data-driven guidance to build and optimize your real estate investment portfolio.</p></div><span class="service-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a>
+        <a href="contact.html" class="service-item"><span class="service-num">03</span><div class="service-info"><h3>Luxury Rentals</h3><p>Curated short and long-term rentals in the world's most desirable locations.</p></div><span class="service-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a>
+        <a href="contact.html" class="service-item"><span class="service-num">04</span><div class="service-info"><h3>Property Management</h3><p>Comprehensive management services that protect and enhance your investment.</p></div><span class="service-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a>
+        <a href="contact.html" class="service-item"><span class="service-num">05</span><div class="service-info"><h3>Relocation Services</h3><p>Seamless transitions with end-to-end support for you and your family.</p></div><span class="service-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a>
+        <a href="contact.html" class="service-item"><span class="service-num">06</span><div class="service-info"><h3>Property Valuation</h3><p>Accurate, market-informed valuations backed by proprietary data and expertise.</p></div><span class="service-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TEAM ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <span class="eyebrow eyebrow--center">Our Team</span>
+        <h2 class="section-title">Meet Our Property Advisors</h2>
+      </div>
+      <div class="team-grid" data-reveal data-delay="1">
+        <div class="agent-card"><div class="agent-img"><img src="https://images.unsplash.com/photo-1507005128880-6f0b9a9b3e7e?w=600&q=80&auto=format&fit=crop" alt="James Carter" loading="lazy" /></div><div class="agent-body"><h3>James Carter</h3><div class="agent-role">Senior Advisor</div><div class="agent-specialty">Luxury Villas &amp; Estates</div><div class="agent-socials"><a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg></a><a href="#" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a></div></div></div>
+        <div class="agent-card"><div class="agent-img"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b37390?w=600&q=80&auto=format&fit=crop" alt="Sofia Martinez" loading="lazy" /></div><div class="agent-body"><h3>Sofia Martinez</h3><div class="agent-role">Investment Specialist</div><div class="agent-specialty">Off-Plan &amp; New Developments</div><div class="agent-socials"><a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg></a><a href="#" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a></div></div></div>
+        <div class="agent-card"><div class="agent-img"><img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&q=80&auto=format&fit=crop" alt="Michael Chen" loading="lazy" /></div><div class="agent-body"><h3>Michael Chen</h3><div class="agent-role">Commercial Advisor</div><div class="agent-specialty">Offices &amp; Hospitality</div><div class="agent-socials"><a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg></a><a href="#" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a></div></div></div>
+        <div class="agent-card"><div class="agent-img"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=600&q=80&auto=format&fit=crop" alt="Emma Wilson" loading="lazy" /></div><div class="agent-body"><h3>Emma Wilson</h3><div class="agent-role">Relocation Consultant</div><div class="agent-specialty">International Moves</div><div class="agent-socials"><a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg></a><a href="#" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section bg-soft">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <span class="eyebrow eyebrow--center">Client Stories</span>
+        <h2 class="section-title">What Our Clients Say</h2>
+      </div>
+      <div class="testimonial-wrap" data-testimonials data-reveal data-delay="1">
+        <div class="testimonial-slide is-active" data-tslide>
+          <p class="testimonial-quote">Horizon Properties made what could have been a stressful process feel effortless. Their team understood exactly what we were looking for and found us a home that exceeded every expectation.</p>
+          <div class="testimonial-author"><div class="testimonial-avatar"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b37390?w=200&q=80&auto=format&fit=crop" alt="Client" loading="lazy" /></div><div class="testimonial-meta"><h4>Charlotte Reeves</h4><span>Villa Purchase — Miami Beach</span></div></div>
+        </div>
+        <div class="testimonial-slide" data-tslide>
+          <p class="testimonial-quote">As an international investor, I needed an advisor who understood global markets. Horizon's investment intelligence and network gave me confidence in every decision. Outstanding service.</p>
+          <div class="testimonial-author"><div class="testimonial-avatar"><img src="https://images.unsplash.com/photo-1507005128880-6f0b9a9b3e7e?w=200&q=80&auto=format&fit=crop" alt="Client" loading="lazy" /></div><div class="testimonial-meta"><h4>Daniel Okafor</h4><span>Investment Portfolio — Dubai</span></div></div>
+        </div>
+        <div class="testimonial-slide" data-tslide>
+          <p class="testimonial-quote">From the first viewing to the final closing, the level of attention and care was remarkable. Horizon didn't just sell us a property — they helped us find a home for our family.</p>
+          <div class="testimonial-author"><div class="testimonial-avatar"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80&auto=format&fit=crop" alt="Client" loading="lazy" /></div><div class="testimonial-meta"><h4>Isabella Romano</h4><span>Family Home — Austin, TX</span></div></div>
+        </div>
+        <div class="testimonial-controls">
+          <button class="carousel-arrow" data-prev aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg></button>
+          <div class="testimonial-dots"><span class="testimonial-dot is-active" data-tdot></span><span class="testimonial-dot" data-tdot></span><span class="testimonial-dot" data-tdot></span></div>
+          <button class="carousel-arrow" data-next aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARKET INSIGHTS ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head section-head--row" data-reveal>
+        <div><span class="eyebrow">Insights</span><h2 class="section-title">Market Insights</h2></div>
+        <a href="blog.html" class="btn btn-outline">View All Articles <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+      <div class="insights-grid" data-reveal data-delay="1">
+        <a href="blog.html" class="article-card"><div class="article-img"><img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800&q=80&auto=format&fit=crop" alt="Luxury Market Trends" loading="lazy" /></div><div class="article-body"><div class="article-cat">Market Trends</div><h3>Luxury Real Estate: 2026 Market Outlook</h3><div class="article-meta"><span>Oct 2, 2026</span><span>6 min read</span></div></div></a>
+        <a href="blog.html" class="article-card"><div class="article-img"><img src="https://images.unsplash.com/photo-1589834390005-5d4fb9bf3d32?w=800&q=80&auto=format&fit=crop" alt="Investment Guide" loading="lazy" /></div><div class="article-body"><div class="article-cat">Investment Guides</div><h3>How to Evaluate a Luxury Investment Property</h3><div class="article-meta"><span>Sep 28, 2026</span><span>8 min read</span></div></div></a>
+        <a href="blog.html" class="article-card"><div class="article-img"><img src="https://images.unsplash.com/photo-1602343168117-bb8ffe3e2e9f?w=800&q=80&auto=format&fit=crop" alt="Architecture & Design" loading="lazy" /></div><div class="article-body"><div class="article-cat">Architecture</div><h3>The Rise of Biophilic Design in Luxury Homes</h3><div class="article-meta"><span>Sep 20, 2026</span><span>5 min read</span></div></div></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="cta-strip" data-reveal>
+        <div class="cta-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M11.5 11.5L21 2m-4 0h4v4"/></svg></div>
+        <div class="cta-content"><h2>Ready to Find Your Perfect Property?</h2><p>Let our experts guide you to the right home or investment.</p></div>
+        <a href="contact.html" class="btn btn-primary btn-lg">Get In Touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="color:var(--white)"><svg viewBox="0 0 28 28" fill="currentColor"><path d="M3 24V11l8-5v18H3zm10 0V5l8 5v14h-8z" opacity="0.9"/><circle cx="7" cy="14" r="1.3" fill="#CDA75E"/><circle cx="7" cy="18" r="1.3" fill="#CDA75E"/><circle cx="16" cy="10" r="1.3" fill="#CDA75E"/><circle cx="19" cy="10" r="1.3" fill="#CDA75E"/><circle cx="16" cy="14" r="1.3" fill="#CDA75E"/><circle cx="19" cy="14" r="1.3" fill="#CDA75E"/></svg><span>HORIZON PROPERTIES</span></a>
+          <p>Premium real estate advisory connecting discerning clients with exceptional properties across the world's most sought-after destinations.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col"><h4>Properties</h4><ul><li><a href="properties.html">Buy</a></li><li><a href="properties.html">Rent</a></li><li><a href="properties.html">New Developments</a></li><li><a href="properties.html">Neighborhoods</a></li></ul></div>
+        <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="index.html#team">Team</a></li><li><a href="contact.html">Careers</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Resources</h4><ul><li><a href="blog.html">Insights</a></li><li><a href="blog.html">Guides</a></li><li><a href="contact.html">FAQ</a></li></ul></div>
+        <div class="footer-col">
+          <h4>Stay Connected</h4>
+          <ul class="footer-contact">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> (555) 246-7890</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> hello@horizonprops.com</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 1200 Brickell Ave, Miami FL</li>
+          </ul>
+          <form class="footer-newsletter" onsubmit="return false"><input type="email" placeholder="Your email" /><button type="submit">Subscribe</button></form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-year>2026</span> Horizon Properties. All rights reserved.</span>
+        <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="asset/js/main.js"></script>
+</body>
 </html>
