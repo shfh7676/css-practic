@@ -11,6 +11,7 @@ import {
   icons, renderPropertyCard, initFavoriteButtons,
   initCarousel, initGallery,
 } from './components.js';
+import { initHeroVideo } from './heroVideo.js';
 
 // ============================================================
 // HOME PAGE
@@ -20,18 +21,24 @@ export function renderHome() {
   const heroImg = 'https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1920&q=80';
 
   return `
-    <section class="hero">
-      <div class="hero-bg">
-        <img src="${heroImg}" alt="Luxury modern villa at sunset" />
-      </div>
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <h1 class="hero-title">Discover Exceptional<br/>Homes & Investments</h1>
-        <p class="hero-subtitle">Premium properties in prime locations. Find your dream home or the perfect investment with confidence.</p>
-      </div>
-      <div class="hero-scroll">
-        <span>Scroll</span>
-        <div class="hero-scroll-line"></div>
+    <section class="hero-scroll-section" id="heroScrollSection">
+      <div class="hero-sticky">
+        <video class="hero-video" id="heroVideo" preload="auto" playsinline muted aria-hidden="true">
+          <source src="/video/hero.mp4" type="video/mp4" />
+        </video>
+        <img class="hero-fallback" id="heroFallback" src="${heroImg}" alt="Luxury modern villa at sunset" />
+        <div class="hero-overlay"></div>
+        <div class="hero-content" id="heroContent">
+          <h1 class="hero-title">Discover Exceptional<br/>Homes & Investments</h1>
+          <p class="hero-subtitle">Premium properties in prime locations. Find your dream home or the perfect investment with confidence.</p>
+        </div>
+        <div class="hero-scroll">
+          <span>Scroll</span>
+          <div class="hero-scroll-line"></div>
+        </div>
+        <div class="hero-loader" id="heroLoader">
+          <div class="hero-loader-line"></div>
+        </div>
       </div>
     </section>
 
@@ -169,6 +176,7 @@ export function renderHome() {
 export function initHome() {
   initFavoriteButtons();
   initCarousel(document.querySelector('.featured-carousel'));
+  initHeroVideo();
 }
 
 // ============================================================
